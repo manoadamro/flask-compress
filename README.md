@@ -79,3 +79,12 @@ Within your Flask application's settings you can provide the following settings 
 | `COMPRESS_CACHE_KEY` | Specifies the cache key method for lookup/storage of response data. | `None` |
 | `COMPRESS_CACHE_BACKEND` | Specified the backend for storing the cached response data. | `None` |
 | `COMPRESS_REGISTER` | Specifies if compression should be automatically registered. | `True` |
+
+
+## Testing
+
+Install ```tox``` with ```pip install tox``` or ```pip3 install tox```
+
+In the source directory, run: ```tox```
+
+This will run tests with coverage, report PEP8 violations and security issues.  
