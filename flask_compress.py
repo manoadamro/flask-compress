@@ -81,6 +81,10 @@ class Compress(object):
             app.after_request(self.after_request)
 
     def after_request(self, response):
+
+        if response.status_code == 204:
+            return response
+
         app = self.app or current_app
         accept_encoding = request.headers.get('Accept-Encoding', '')
 
